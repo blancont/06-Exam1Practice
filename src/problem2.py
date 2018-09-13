@@ -115,7 +115,7 @@ def problem2a(circle, rectangle, window):
     window.render()
     window.continue_on_mouse_click()
     line = rg.Line(rectangle.get_upper_right_corner(), rectangle.get_lower_left_corner())
-    # still need to make line an arrow
+    line.arrow = 'last'
     line.attach_to(window)
     window.render()
     window.continue_on_mouse_click()
